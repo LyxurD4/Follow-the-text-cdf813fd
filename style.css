@@ -1,0 +1,23 @@
+.tooltip {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+.icon {
+    position: relative;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+.tooltip-content {
+    padding: 5px;
+    visibility: hidden;
+}
+.icon:hover + .tooltip-content {
+    visibility: visible;
+    color: white;
+    background-color: black;
+}
